@@ -55,7 +55,7 @@ function buscarFilmes() {
     }
 
     filmesDaBusca = resultado;
-    mostrarFilmes(resultado);
+    filtrarGenero();
 }
 
 document.getElementById("busca").addEventListener("input", buscarFilmes);
@@ -76,8 +76,14 @@ function filtrarGenero() {
             }
         }
 
-        mostrarFilmes(resultado);
+        filtrarGenero();
     }
 }
 
 document.getElementById("filtro-genero").addEventListener("change", filtrarGenero);
+
+// Inverte a ordem dos filmes que estão aparecendo.
+document.getElementById("btn-inverter").addEventListener("click", function () {
+    filmesNaTela.reverse();
+    mostrarFilmes(filmesNaTela);
+});

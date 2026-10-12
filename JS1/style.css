@@ -190,3 +190,18 @@ tr:nth-child(even) {
     margin: 5px;
     padding: 8px;
 }
+
+button {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #8d1825;
+    border-radius: 4px;
+    background-color: #8d1825;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #d00024;
+}
