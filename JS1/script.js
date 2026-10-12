@@ -77,7 +77,7 @@ function filtrarGenero() {
             }
         }
 
-        filtrarGenero();
+        mostrarFilmes(resultado);
     }
 }
 
@@ -138,3 +138,4 @@ tituloCatalogo.addEventListener("mouseenter", function () {
 tituloCatalogo.addEventListener("mouseout", function () {
     tituloCatalogo.style.color = "#8d1825";
 });
+
