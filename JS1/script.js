@@ -127,3 +127,14 @@ document.getElementById("btn-limpar-favoritos").addEventListener("click", functi
 });
 
 mostrarFavoritos();
+
+// Muda a cor do título quando o mouse passa por cima.
+let tituloCatalogo = document.getElementById("titulo-catalogo");
+
+tituloCatalogo.addEventListener("mouseenter", function () {
+    tituloCatalogo.style.color = "#d00024";
+});
+
+tituloCatalogo.addEventListener("mouseout", function () {
+    tituloCatalogo.style.color = "#8d1825";
+});
