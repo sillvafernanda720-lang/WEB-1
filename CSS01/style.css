@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(177, 206, 204);
+    background-image: url("header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: system-ui, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1,h2 {
+    color: rgb(211, 173, 173);
+}
+
+p {
+    color: #f0dada;
+    line-height: 1.5;
+}
+
+#subtitulo {
+    color: rgb(92, 92, 109);
+    font-size: 2rem;
+}
+
+.aviso {
+    background: #fff3cd;
+    color: #272623;
+    padding: 8px;
+    border: 1px solid #ffeeba;
+    border-radius: 4px;
+}
+.caixa3 {
+    width: 400px;
+    height: 300px;  
+    max-width: 100%;
+    background: #242020;  
+}   
