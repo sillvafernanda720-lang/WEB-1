@@ -42,6 +42,18 @@
             <div class="controles">
                 <label for="busca">Buscar por título:</label>
                 <input type="text" id="busca" placeholder="Buscar filme...">
+                <label for="filtro-genero">Filtrar por gênero:</label>
+                <select id="filtro-genero">
+                    <option value="Todos">Todos</option>
+                    <option value="Fantasia e mistério">Fantasia e mistério</option>
+                    <option value="Fantasia gótica">Fantasia gótica</option>
+                    <option value="Fantasia e musical">Fantasia e musical</option>
+                    <option value="Terror gótico">Terror gótico</option>
+                    <option value="Terror clássico">Terror clássico</option>
+                    <option value="Drama e mistério">Drama e mistério</option>
+                    <option value="Fantasia sombria">Fantasia sombria</option>
+                    <option value="Terror e mistério">Terror e mistério</option>
+                </select>
             </div>
             <p>Filmes exibidos: <span id="contador">0</span></p>
             <div id="lista-filmes"></div>        </div>
@@ -57,5 +69,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 

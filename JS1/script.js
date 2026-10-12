@@ -59,3 +59,25 @@ function buscarFilmes() {
 }
 
 document.getElementById("busca").addEventListener("input", buscarFilmes);
+
+
+// Mostra todos os filmes ou somente os do gênero escolhido.
+function filtrarGenero() {
+    let generoEscolhido = document.getElementById("filtro-genero").value;
+
+    if (generoEscolhido === "Todos") {
+        mostrarFilmes(filmesDaBusca);
+    } else {
+        let resultado = [];
+
+        for (let i = 0; i < filmesDaBusca.length; i++) {
+            if (filmesDaBusca[i].genero === generoEscolhido) {
+                resultado.push(filmesDaBusca[i]);
+            }
+        }
+
+        mostrarFilmes(resultado);
+    }
+}
+
+document.getElementById("filtro-genero").addEventListener("change", filtrarGenero);
