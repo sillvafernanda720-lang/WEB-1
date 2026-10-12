@@ -9,3 +9,34 @@ let filmes = [
     { titulo: "A Noiva Cadáver", ano: 2005, genero: "Fantasia sombria", nota: 7.4, poster: "imagens/noivacadaver.jpg" },
     { titulo: "A Lenda do Cavaleiro sem Cabeça", ano: 1999, genero: "Terror e mistério", nota: 7.3, poster: "imagens/semcabeça.jpg" }
 ];
+
+// Mostra os filmes na página.
+let filmesNaTela = filmes;
+
+function mostrarFilmes(lista) {
+    let cartoes = "";
+    let areaFilmes = document.getElementById("lista-filmes");
+    let contador = document.getElementById("contador");
+
+    if (lista.length === 0) {
+        areaFilmes.innerHTML = "<p>Nenhum filme encontrado</p>";
+    } else {
+        for (let i = 0; i < lista.length; i++) {
+            let recomendado = lista[i].nota >= 8 ? "⭐ Recomendado" : "";
+            cartoes += "<div class='cartao'>";
+            cartoes += "<div class='imagem-filme'><img src='" + lista[i].poster + "' alt='Pôster de " + lista[i].titulo + "'></div>";
+            cartoes += "<h3>" + lista[i].titulo + "</h3>";
+            cartoes += "<p>" + lista[i].ano + " | " + lista[i].genero + "</p>";
+            cartoes += "<p>Nota: " + lista[i].nota + "</p>";
+            cartoes += "<p>" + recomendado + "</p>";
+            cartoes += "</div>";
+        }
+
+        areaFilmes.innerHTML = cartoes;
+    }
+
+    filmesNaTela = lista;
+    contador.innerText = lista.length;
+}
+
+mostrarFilmes(filmes);
