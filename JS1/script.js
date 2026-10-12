@@ -29,6 +29,7 @@ function mostrarFilmes(lista) {
             cartoes += "<p>" + lista[i].ano + " | " + lista[i].genero + "</p>";
             cartoes += "<p>Nota: " + lista[i].nota + "</p>";
             cartoes += "<p>" + recomendado + "</p>";
+            cartoes += "<button onclick='favoritar(" + i + ")'>♥ Favoritar</button>";
             cartoes += "</div>";
         }
 
@@ -87,3 +88,42 @@ document.getElementById("btn-inverter").addEventListener("click", function () {
     filmesNaTela.reverse();
     mostrarFilmes(filmesNaTela);
 });
+
+// Guarda o título do filme escolhido.
+let favoritos = [];
+
+function favoritar(indice) {
+    let titulo = filmesNaTela[indice].titulo;
+
+    if (favoritos.includes(titulo) === false) {
+        favoritos.push(titulo);
+    }
+
+    mostrarFavoritos();
+}
+
+// Atualiza a quantidade e os títulos favoritos na página.
+function mostrarFavoritos() {
+    let contador = document.getElementById("contador-favoritos");
+    let lista = document.getElementById("lista-favoritos");
+    let nomes = "";
+
+    contador.innerText = favoritos.length;
+
+    if (favoritos.length === 0) {
+        lista.innerText = "Nenhum filme favoritado.";
+    } else {
+        for (let i = 0; i < favoritos.length; i++) {
+            nomes += favoritos[i] + "<br>";
+        }
+
+        lista.innerHTML = nomes;
+    }
+}
+
+document.getElementById("btn-limpar-favoritos").addEventListener("click", function () {
+    favoritos = [];
+    mostrarFavoritos();
+});
+
+mostrarFavoritos();

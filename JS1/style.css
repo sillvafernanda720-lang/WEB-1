@@ -205,3 +205,10 @@ button:hover,
 button:focus {
     background-color: #d00024;
 }
+
+.favoritos {
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid #8d1825;
+    background-color: #f8eeee;
+}
