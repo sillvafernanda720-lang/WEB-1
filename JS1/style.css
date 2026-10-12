@@ -172,3 +172,16 @@ tr:nth-child(even) {
 .rodape a {
     color: white;
 }
+
+.controles {
+    margin: 15px 0;
+    padding: 12px;
+    border: 1px solid #c7babb;
+    background-color: #f8eeee;
+}
+
+.controles label,
+.controles input {
+    margin: 5px;
+    padding: 8px;
+}

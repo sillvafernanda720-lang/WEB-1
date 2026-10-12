@@ -40,3 +40,22 @@ function mostrarFilmes(lista) {
 }
 
 mostrarFilmes(filmes);
+
+// Procura no título os caracteres que foram digitados.
+let filmesDaBusca = filmes;
+
+function buscarFilmes() {
+    let texto = document.getElementById("busca").value.toLowerCase();
+    let resultado = [];
+
+    for (let i = 0; i < filmes.length; i++) {
+        if (filmes[i].titulo.toLowerCase().includes(texto)) {
+            resultado.push(filmes[i]);
+        }
+    }
+
+    filmesDaBusca = resultado;
+    mostrarFilmes(resultado);
+}
+
+document.getElementById("busca").addEventListener("input", buscarFilmes);
