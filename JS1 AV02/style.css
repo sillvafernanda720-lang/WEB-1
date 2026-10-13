@@ -1,0 +1,214 @@
+
+body {
+    margin: 0;
+    background-color: #53252581;
+    color: #292020;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho {
+    padding: 25px;
+    background-color: #360b12;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 5px;
+    color: rgb(220, 35, 55);
+    font-size: 38px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.cabecalho h2 {
+    color: #eeeeee;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.menu a {
+    display: inline-block;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #8d1825;
+}
+
+.conteudo {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.secao {
+    margin: 20px 0;
+    padding: 18px;
+    border: 1px solid #c7babb;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.secao h2 {
+    color: #8d1825;
+}
+
+.filme-destaque {
+    padding: 15px;
+    border: 2px solid #8d1825;
+    border-radius: 6px;
+    background-color: #f8eeee;
+}
+
+.imagem-destaque {
+    display: inline-block;
+    width: 28%;
+    height: 210px;
+    border: 1px dashed #8d1825;
+    background-color: #2a1014;
+    color: white;
+    text-align: center;
+    vertical-align: top;
+}
+
+.imagem-destaque p {
+    margin-top: 85px;
+}
+
+.imagem-destaque img {
+    width: 100%;
+    height: 210px;
+}
+
+.informacao-destaque {
+    display: inline-block;
+    width: 65%;
+    margin-left: 15px;
+    vertical-align: top;
+}
+
+.cartao {
+    display: inline-block;
+    width: 28%;
+    margin: 1%;
+    padding: 10px;
+    border: 1px solid #c7babb;
+    border-radius: 5px;
+    background-color: #f8eeee;
+    vertical-align: top;
+}
+
+.imagem-filme {
+    height: 190px;
+    border: 1px dashed #8d1825;
+    background-color: #2a1014;
+    color: white;
+    text-align: center;
+}
+
+.imagem-filme p {
+    padding-top: 65px;
+    font-size: 14px;
+}
+
+.imagem-filme img {
+    width: 100%;
+    height: 190px;
+}
+
+.cartao h3 {
+    min-height: 40px;
+    font-size: 17px;
+}
+
+.cartao a, .secao a, .rodape a {
+    color: #8d1825;
+}
+
+.cartao a:hover, .secao a:hover, .rodape a:hover {
+    color: #d00024;
+}
+
+.generos {
+    list-style-type: square;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 9px;
+    border: 1px solid #b9a8aa;
+    text-align: left;
+}
+
+th {
+    background-color: #8d1825;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f8eeee;
+}
+
+.icone {
+    float: right;
+    width: 64px;
+    height: 64px;
+    margin: 0 0 10px 12px;
+}
+
+.rodape {
+    padding: 15px;
+    background-color: #360b12;
+    text-align: center;
+}
+
+.rodape a {
+    color: white;
+}
+
+.controles {
+    margin: 15px 0;
+    padding: 12px;
+    border: 1px solid #c7babb;
+    background-color: #f8eeee;
+}
+
+.controles label,
+.controles input {
+    margin: 5px;
+    padding: 8px;
+}
+
+.controles select {
+    margin: 5px;
+    padding: 8px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #8d1825;
+    border-radius: 4px;
+    background-color: #8d1825;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #d00024;
+}
+
+.favoritos {
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid #8d1825;
+    background-color: #f8eeee;
+}
