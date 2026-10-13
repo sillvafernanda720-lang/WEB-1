@@ -25,3 +25,7 @@ div {
 p#txtRodape {
     text-align: center;
 }
+p#txtResultado {
+    text-align: left;
+    padding-left: 20px;
+}
